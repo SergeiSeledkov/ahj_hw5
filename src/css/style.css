@@ -1,0 +1,67 @@
+.popover {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: calc(50% - 50px);
+	width: 220px;
+	height: 100px;
+	margin: 0 auto;
+}
+.popover-button {
+	padding: 15px;
+
+	background-color: #dc3545;
+	color: #fff;
+	border: none;
+	font: normal 20px SFMono-Regular;
+	border-radius: 5px;
+}
+
+.popover-window {
+	position: absolute;
+	max-width: 250px;
+}
+
+.popover-header {
+	margin: 0;
+	padding: 8px 12px;
+
+	background-color: rgba(231, 231, 231, 0.7);
+  border: 1px solid rgba(176, 176, 176, 0.6);
+	border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+	font: bold 18px SFMono-Regular;
+}
+
+.popover-body {
+	padding: 8px 12px;
+
+  border: 1px solid rgba(176, 176, 176, 0.6);
+	border-top: none;
+	border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+	font: normal 16px SFMono-Regular;
+}
+
+.popover-arrow {
+	display: flex;
+	margin: 0 auto;
+  width: 20px;
+  height: 10px;
+}
+
+.popover-arrow::before, .popover-arrow::after {
+	content: "";
+  display: block;
+	box-sizing: border-box;
+
+  border: 5px solid;
+}
+
+.popover-arrow::before {
+	border-color: rgba(176, 176, 176, 0.6) rgba(176, 176, 176, 0.6) transparent transparent;
+}
+
+.popover-arrow::after {
+	border-color: rgba(176, 176, 176, 0.6) transparent transparent rgba(176, 176, 176, 0.6);
+}
